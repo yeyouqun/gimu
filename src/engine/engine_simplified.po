@@ -1,0 +1,195 @@
+#
+# Resource script for Chinese Language.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: engine\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-11-20 18:40+0100\n"
+"Last-Translator: yeyouqun <yeyouqun@163.com>\n"
+"Language-Team: engine - http:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+msgid "IDS_ENGINE_GIMU"
+msgstr "吉木引擎"
+
+msgid "IDS_SIG_CHECK"
+msgstr "数据签名不正确，应为 %4X, 实际为 %4X。"
+
+msgid "IDS_OPEN_FILE_FAILED"
+msgstr "无法打开文件 %s, 原因是 %s。"
+
+msgid "IDS_READ_FILE_FAILED"
+msgstr "读取文件 %s 出错，需要 %d 字节, 实际为 %d 字节，有可能文件已经损坏，或者程序中存在错误。"
+
+msgid "IDS_UNRECOGNIZIBLE_UIF"
+msgstr "无法识别的 UIF 或者记录文件。"
+
+msgid "IDS_UNSUPPORT_UIF_VERSION"
+msgstr "不支持的高版本。"
+
+msgid "IDS_WRONG_UIF_DATA"
+msgstr "读取数据不是预期值，有可能 UIF 文件的内容已经受到破坏。"
+
+msgid "IDS_FILE_EXISTS"
+msgstr "创建的文件 %s 已经存在。"
+
+msgid "IDS_NO_SUCH_FILE"
+msgstr "不存在指定的文件 %s。"
+
+msgid "IDS_4GB_TOO_BIG_FILE"
+msgstr "当前不支持大于 4GB 的割文件。"
+
+msgid "IDS_ZIP_WRONG_ENDDATA"
+msgstr "错误的 ZIP 结束记录数据，有可能 ZIP 数据不完整或者已经损坏。"
+
+msgid "IDS_ZIP_ENTRY_TWO_BIG"
+msgstr "ZIP 文件的数据项目过大，无法支持。"
+
+msgid "IDS_NOT_SUPPORT_COMRESS_METHOD"
+msgstr "不支持的压缩方法 %d。"
+
+msgid "IDS_NOT_SUPPORT_ENCRYPT_METHOD"
+msgstr "不支持的加密/解密方法 %d。"
+
+msgid "IDS_NOT_SUPPORT_ENCRYPT_KEYSIZE"
+msgstr "加密/解密方法的键值 %d 错误。"
+
+msgid "IDS_UNRECOGNISABLE_PARAM"
+msgstr "无法识别的参数数据 %d。"
+
+msgid "IDS_WRONG_PASSWORD"
+msgstr "无效的密码。"
+
+msgid "IDS_NOT_SUPPORT_ZIP_FORMAT"
+msgstr "不支持的 ZIP 格式，可能是由其他的系统中产生的，或者其他 ZIP 软件生成的。"
+
+msgid "IDS_UNEXPECTED_END_OF_FILE"
+msgstr "未预期的文件结尾。"
+
+msgid "IDS_CRC_CHECK_ERROR"
+msgstr "文件的校验出错，可能数据已经损坏。"
+
+msgid "IDS_BUFFER_ERROR"
+msgstr "内存缓冲区错误，可能由于非对称读取导致的问题，或者原始数据不足。"
+
+msgid "IDS_NULL_PASSWORD"
+msgstr "密码为空。"
+
+msgid "IDS_JOB_STOPPED"
+msgstr "任务被手动停止了。"
+
+msgid "IDS_JOB_HAS_EXCEPTION"
+msgstr "任务由于异常停止了，异常信息是：%s。"
+
+msgid "IDS_JOB_HAS_UNKNOW_EXCEPTION"
+msgstr "任务由于未知道异常停止了。"
+
+msgid "IDS_UNKNOWN_EXCEPTION"
+msgstr "未知异常出现在文件 %s 行 %d。"
+
+msgid "IDS_COPY"
+msgstr "复制"
+
+msgid "IDS_NOT_SUPPORT_ARCHIVE_TYPE"
+msgstr "不支持的文件类型。"
+
+msgid "IDS_SYNC"
+msgstr "同步"
+
+msgid "IDS_DIR_OR_FILE_NOT_EXISTS"
+msgstr "目录或者文件 %s 不存在，无法恢复文件 %s。"
+
+msgid "IDS_DIR_EMPTY"
+msgstr "目录为空，无法进行进一步操作。"
+
+msgid "IDS_CANT_CREATE_DEST_FILE"
+msgstr "无法创建目标文件 %s，原因可能是：%s。"
+
+msgid "IDS_BEGIN_MERGE"
+msgstr "开始合并数据，根据合并数据的类型，可能需要花费一定的时间。"
+
+msgid "IDS_REMOVING_FILE"
+msgstr "正在删除文件。"
+
+msgid "IDS_LOG_MESSAGE"
+msgstr "作业 '%s' 执行成功完成。"
+
+msgid "IDS_LOG_ERROR_MESSAGE"
+msgstr "任务 '%s' 执行错误，错误是 '%s'。"
+
+msgid "IDS_LOG_STOP_MESSAGE"
+msgstr "任务 '%s' 被手工停止。"
+
+msgid "IDS_JOB_TIME_REPORT"
+msgstr "\t时间：%s"
+
+msgid "IDS_JOB_NAME_REPORT"
+msgstr "\t任务名：%s"
+
+msgid "IDS_JOB_RUN_TYPE"
+msgstr "\t执行类型：%s"
+
+msgid "IDS_TOTAL_DIR"
+msgstr "\t总目录：%d"
+
+msgid "IDS_TOTAL_FILE"
+msgstr "\t总文件：%d"
+
+msgid "IDS_TOTAL_SIZE"
+msgstr "\t总大小：%I64d"
+
+msgid "IDS_STORE_DATA_TO_TYPE"
+msgstr "存储"
+
+msgid "IDS_GET_DATA_BACK_TYPE"
+msgstr "取回"
+
+msgid "IDS_JOB_LOG"
+msgstr "%s,%s,%s"
+
+msgid "IDS_CANT_CREATE_DIR"
+msgstr "无法创建目录 \"%s\"，原因为 \"%s\""
+
+msgid "IDS_CANT_REMOVE_FILE"
+msgstr "无法删除文件 '%s'，因为 '%s'。"
+
+msgid "IDS_CANT_REMOVE_DIR"
+msgstr "无法删除目录 '%s'，因为 '%s'，你需要手工删除。"
+
+msgid "IDS_HAS_SAME_FILE_ON_DEST"
+msgstr "目的地已经存在文件 %s，这本不应该，这极可能是多个数据源下有同名文件所致。"
+
+msgid "IDS_CANT_MOVE_FILE"
+msgstr "无法将文件 [%s] 移动到 [%s]，因为 %s。"
+
+msgid "IDS_ROLLBACK_MOVE_FILE_ERROR"
+msgstr "移动文件时出错，回滚时无法将文件 [%s] 移动到 [%s]，因为 %s。"
+
+msgid "IDS_ROLLING_BACK_FILE"
+msgstr "移动文件 [%s] 到 [%s] 时出错，正在回滚操作。"
+
+msgid "IDS_ROLLING_BACK_DIR"
+msgstr "因为 %s 无法创建目录 [%s]，正在回滚操作。"
+
+msgid "IDS_RENAME_FILE_ERROR"
+msgstr "无法将文件 [%s] 更名为 [%s]，正在回滚操作，因为 %s。"
+
+msgid "IDS_ZIP64_WRONG_CDLDATA"
+msgstr "错误的 ZIP64 End Locator 数据。"
+
+msgid "IDS_ZIP64_WRONG_CDRDATA"
+msgstr "错误的 ZIP64 End Directory 数据。"
+
+msgid "IDS_ERROR_ZIP64_HEAD_ID"
+msgstr "错误的 ZIP64 扩展头标识。"
+
+msgid "IDS_UNMATCH_ENCRYPTION"
+msgstr "不匹配的加密信息记录，可能文件损坏，或者非正常的 ZIP 文件格式。"
+
+msgid "IDS_UNMATCH_ZIP64"
+msgstr "不匹配的 ZIP64 信息记录，可能文件损坏，或者非正常的 ZIP 文件格式。"

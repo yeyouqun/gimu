@@ -1,0 +1,17 @@
+// -*- MPC -*-
+// other.mpb,v 1.2 2004/02/25 17:30:30 elliott_c Exp
+
+feature(ace_other) {
+  Source_Files(ACE_COMPONENTS) {
+    Other {
+      Local_Name_Space.cpp
+      Name_Proxy.cpp
+      Name_Request_Reply.cpp
+      Name_Space.cpp
+      Naming_Context.cpp
+      Registry_Name_Space.cpp
+      Remote_Name_Space.cpp
+      NT_Service.cpp
+    }
+  }
+}

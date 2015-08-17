@@ -1,0 +1,182 @@
+# Makefile for building the ACE_RMCast library with Borland C++ Make
+
+NAME = ACE_RMCast
+
+NO_FULL_PATH=1
+
+OBJFILES = \
+	$(OBJDIR)\RMCast.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Ack_Worker.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Copy_On_Write.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Fork.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Fragment.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_IO_UDP.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Membership.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Module.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Module_Factory.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Partial_Message.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Proxy.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Reassembly.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Receiver_Module.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Reliable_Factory.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Reordering.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Resend_Handler.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Resend_Worker.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Retransmission.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Sequencer.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Singleton_Factory.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_UDP_Event_Handler.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_UDP_Proxy.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_UDP_Reliable_Receiver.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_UDP_Reliable_Sender.$(OBJ_EXT) \
+	$(OBJDIR)\RMCast_Worker.$(OBJ_EXT)
+
+LFLAGS = \
+	-L"..\..\lib\$(CONFIG_SUBDIR)" \
+	-j"..\..\lib\$(CONFIG_SUBDIR)" 
+
+LIBFILES = \
+	ACE$(LIB_DECORATOR).lib \
+	$(DUMMY_VALUE_NOT_ENDING_IN_BACKSLASH)
+
+RESDIR = .
+
+RESOURCE = $(OBJDIR)\RMCast.res
+
+!ifdef STATIC
+LIB_FLAGS = \
+        -DACE_AS_STATIC_LIBS
+!else
+DLL_FLAGS = \
+        -DACE_RMCAST_BUILD_DLL
+!endif
+
+CFLAGS = \
+	-I"..\.." \
+	$(LIB_FLAGS) \
+	$(DLL_FLAGS)
+
+CPPDIR = .
+CDIR   = .
+
+INCDIR_NAME = ace\RMCast
+
+#
+# Override defaults in outputdir.bor
+#
+INSTALL_THIS_TARGET = 1
+
+STATIC_DIR=.
+DEBUG_DIR=.
+PASCAL_DIR=.
+UNICODE_DIR=.
+
+INSTALL_DLLDIR=$(INSTALL_DIR)\lib
+INCLUDES_INSTALL=1
+BINDIR = ..\..\lib
+
+!include <$(ACE_ROOT)\include\makeinclude\build_library.bor>
+
+includes_install: $(INCLUDES)
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Ack_Worker.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Ack_Worker.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Copy_On_Write.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Copy_On_Write.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Export.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Export.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Fork.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Fork.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Fragment.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Fragment.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_IO_UDP.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_IO_UDP.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Membership.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Membership.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Module.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Module.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Module_Factory.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Module_Factory.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Partial_Message.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Partial_Message.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Proxy.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Proxy.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Reassembly.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Reassembly.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Receiver_Module.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Receiver_Module.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Reliable_Factory.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Reliable_Factory.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Reordering.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Reordering.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Resend_Handler.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Resend_Handler.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Resend_Worker.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Resend_Worker.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Retransmission.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Retransmission.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Sequencer.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Sequencer.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Singleton_Factory.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Singleton_Factory.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Event_Handler.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Event_Handler.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Proxy.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Proxy.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Reliable_Receiver.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Reliable_Receiver.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Reliable_Sender.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Reliable_Sender.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Worker.h $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Worker.h 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Ack_Worker.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Ack_Worker.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Copy_On_Write.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Copy_On_Write.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Fork.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Fork.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Fragment.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Fragment.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_IO_UDP.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_IO_UDP.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Membership.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Membership.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Module.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Module.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Module_Factory.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Module_Factory.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Partial_Message.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Partial_Message.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Proxy.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Proxy.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Reassembly.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Reassembly.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Receiver_Module.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Receiver_Module.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Reliable_Factory.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Reliable_Factory.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Reordering.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Reordering.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Resend_Handler.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Resend_Handler.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Resend_Worker.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Resend_Worker.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Retransmission.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Retransmission.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Sequencer.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Sequencer.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Singleton_Factory.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Singleton_Factory.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Event_Handler.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Event_Handler.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Proxy.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Proxy.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Reliable_Receiver.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Reliable_Receiver.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_UDP_Reliable_Sender.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_UDP_Reliable_Sender.i 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y RMCast_Worker.i $(INSTALL_DIR)\include\$(INCDIR_NAME)\RMCast_Worker.i 1> NUL

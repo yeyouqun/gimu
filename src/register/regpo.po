@@ -1,0 +1,57 @@
+#
+# Resource script for Chinese Language.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: engine\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-11-20 18:40+0100\n"
+"Last-Translator: yeyouqun <yeyouqun@163.com>\n"
+"Language-Team: engine - http:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+msgid "IDS_REGISTER_APP"
+msgstr "吉木软件注册码生成器"
+
+msgid "IDS_REGISTER"
+msgstr "生成注册码"
+
+msgid "IDS_MACH_FINGER_PRINT"
+msgstr "机器特征码："
+
+msgid "IDS_SOFTWARE_SN"
+msgstr "吉木软件注册码："
+
+msgid "IDS_SOFTWARE_RAND_SN"
+msgstr "吉木软件随机注册码："
+
+msgid "IDS_CALC_SN"
+msgstr "生成注册码"
+
+msgid "IDS_TEST_SN"
+msgstr "验证机器SN"
+
+msgid "IDS_TEST_RAND_SN"
+msgstr "验证随机SN"
+
+msgid "IDS_CALC_RAND_SN"
+msgstr "产生随机注册码"
+
+msgid "IDS_RSA_KEYS"
+msgstr "RSA 密钥对"
+
+msgid "IDS_PRIVATE_DKEY"
+msgstr "RSA 私钥："
+
+msgid "IDS_PUBLIC_EKEY"
+msgstr "RSA 公钥："
+
+msgid "IDS_RSA_NVALUE"
+msgstr "RSA 模值："
+
+msgid "IDS_CALC_RSA_KEYS"
+msgstr "计算RSA"

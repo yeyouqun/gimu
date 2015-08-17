@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisualStudioToolFile
+	Name="编译PO文件"
+	Version="8.00"
+	>
+	<Rules>
+		<CustomBuildRule
+			Name="PO_RC"
+			DisplayName="Po Compiler"
+			CommandLine="..\tools\msgfmt [AllOptions] [AdditionalOptions] [inputs]"
+			Outputs="[$MoFile]"
+			FileExtensions="*.po"
+			ExecutionDescription="Compling po file to mo file."
+			>
+			<Properties>
+				<StringProperty
+					Name="MoFile"
+					DisplayName="OutputFile"
+					Switch="-o &quot;[value]&quot;"
+					DefaultValue="$(IntDir)\$(InputName).mo"
+				/>
+			</Properties>
+		</CustomBuildRule>
+	</Rules>
+</VisualStudioToolFile>

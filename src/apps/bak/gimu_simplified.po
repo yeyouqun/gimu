@@ -1,0 +1,708 @@
+#
+# Resource script for Chinese Language.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimu\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-11-20 18:40+0100\n"
+"Last-Translator: yeyouqun <yeyouqun@163.com>\n"
+"Language-Team: Gimu - http:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+msgid "IDS_APP_TITLE"
+msgstr "吉木软件"
+
+msgid "IDS_LOG_DATA"
+msgstr "日志"
+
+msgid "IDS_REPORT_DATA"
+msgstr "报表"
+
+msgid "IDS_JOB_MENU"
+msgstr "作业"
+
+msgid "IDS_CREATE_NEW_TIP"
+msgstr "创建文档"
+
+msgid "IDS_OPEN_ARCH_TIP"
+msgstr "打开文档"
+
+msgid "IDS_RUN_TIP"
+msgstr "执行"
+
+msgid "IDS_OPTIONS_TIP"
+msgstr "作业选项(&O)..."
+
+msgid "IDS_CONFIGURE_TIP"
+msgstr "设置(&C)..."
+
+msgid "IDS_CREATE_NEW_ARCH"
+msgstr "创建作业...\tCtrl+N"
+
+msgid "IDS_OPEN_ARCH"
+msgstr "打开档案...\tCtrl+O"
+
+msgid "IDS_ARCH_MENU"
+msgstr "文档(&D)"
+
+msgid "IDS_CONFIGURE_MENU"
+msgstr "设置(&C)"
+
+msgid "IDS_HELP_MENU"
+msgstr "帮助(&H)"
+
+msgid "IDS_OPTIONS_MENU_ITEM"
+msgstr "作业选项(&O)..."
+
+msgid "IDS_SWITCH_MENU_ITEM"
+msgstr "切换(&S)..."
+
+msgid "IDS_PROG_OPTIONS_ITEM"
+msgstr "设置(&P)..."
+
+msgid "IDS_HELP_MENU_ITEM_REG"
+msgstr "注册(&R)..."
+
+msgid "IDS_HELP_MENU_ITEM_HELP"
+msgstr "帮助(&H)..."
+
+msgid "IDS_HELP_MENU_ITEM_ABOUT"
+msgstr "关于(&A)..."
+
+msgid "IDS_LIST_NAME"
+msgstr "标识名"
+
+msgid "IDS_LIST_CREATE_TIME"
+msgstr "创建时间"
+
+msgid "IDS_LIST_DESCRIPTION"
+msgstr "描述信息"
+
+msgid "IDS_LIST_PROGRESS"
+msgstr "执行进度"
+
+msgid "IDS_LIST_NEXTTIME"
+msgstr "下次执行时间"
+
+msgid "IDS_LIST_ATTRIBUTES"
+msgstr "属性信息"
+
+msgid "IDS_DESKTOP"
+msgstr "桌面"
+
+msgid "IDS_MY_COMPUTER"
+msgstr "我的电脑"
+
+msgid "IDS_NETWORK"
+msgstr "网络"
+
+msgid "IDS_MY_DOCS"
+msgstr "我的文档"
+
+msgid "IDS_SELECT_ITEM"
+msgstr "请选择目录或文件"
+
+msgid "IDS_JOB_NAME"
+msgstr "请输入作业名："
+
+msgid "IDS_SEL_DIRECTORY"
+msgstr "请输入作业的目的地："
+
+msgid "IDS_JOB_OPTIONS"
+msgstr "作业设置(&C)..."
+
+msgid "IDS_JOB_PLAN"
+msgstr "执行计划(&P)..."
+
+msgid "IDS_DIRECTORY_SELE_BUTT"
+msgstr "目录(&D)..."
+
+msgid "IDS_JOB_DATA_BOX"
+msgstr "输入作业参数"
+
+msgid "IDS_COMPRESS_DATA"
+msgstr "压缩数据"
+
+msgid "IDS_SYNC_REMOVED_FILE"
+msgstr "同步删除的文件及目录。"
+
+msgid "IDS_ENCRYPT_DATA"
+msgstr "加密数据"
+
+msgid "IDS_ENCRYPTION_STRENGTH"
+msgstr "加密强度："
+
+msgid "IDS_ENCRYPTION_PASSWD"
+msgstr "输入密码："
+
+msgid "IDS_ENCRYPTION_PASSWD_CONFIRM"
+msgstr "确认密码："
+
+msgid "IDS_GENERAL_OPTIONS"
+msgstr "常规"
+
+msgid "IDS_FILTER"
+msgstr "过滤"
+
+msgid "IDS_PLAN"
+msgstr "计划"
+
+msgid "IDS_CONFIG_JOB"
+msgstr "设置作业属性"
+
+msgid "IDS_CONFIG_GENERAL"
+msgstr "设置作业常规属性"
+
+msgid "IDS_CONFIG_FILTER"
+msgstr "设置作业过滤属性"
+
+msgid "IDS_CONFIG_PLAN"
+msgstr "设置作业计划属性"
+
+msgid "IDS_EXCLUDE"
+msgstr "排除如下文件及目录"
+
+msgid "IDS_INCLUDE"
+msgstr "包含如下文件及目录"
+
+msgid "IDS_DIRECTORY_STR"
+msgstr "应用目录规则"
+
+msgid "IDS_FILE_STR"
+msgstr "应用文件规则"
+
+msgid "IDS_DIRECTORY_RULE"
+msgstr "目录过滤规则："
+
+msgid "IDS_DELETE"
+msgstr "删除(&D)"
+
+msgid "IDS_OUTPUT_FORMAT"
+msgstr "输出类型："
+
+msgid "IDS_ON_START_UP"
+msgstr "启动系统后立即执行"
+
+msgid "IDS_ON_SHUTDOWN"
+msgstr "关闭系统前执行"
+
+msgid "IDS_ON_SOMETIME"
+msgstr "在下面的某个时间执行"
+
+msgid "IDS_ADD"
+msgstr "添加(&A)..."
+
+msgid "IDS_DATA_TO_ORIGINAL"
+msgstr "取回数据到原位置"
+
+msgid "IDS_DATA_TO_SPECIFIED_PATH"
+msgstr "取回数据到："
+
+msgid "IDS_REST_OPTIONS"
+msgstr "取回设置(&O)..."
+
+msgid "IDS_SPLIT_SIZE"
+msgstr "档案分割尺寸："
+
+msgid "IDS_COMMENT_MESSAGE"
+msgstr "档案注释："
+
+msgid "IDS_APPLY_NAME"
+msgstr "应用"
+
+msgid "IDS_AT"
+msgstr "于"
+
+msgid "IDS_DIRECTORY"
+msgstr "目录"
+
+msgid "IDS_FILE_FILTER_EXAMPLE"
+msgstr "如 \"应用 'x?z*.txt' 于 'c:\\example' 目录(空应用于所有)\""
+
+msgid "IDS_DIR_FILTER_EXAMPLE"
+msgstr "如 \"应用 'a??*' 于 'c:\\example' 目录(空应用于所有)\""
+
+msgid "IDS_FILE_NAME"
+msgstr "文件名"
+
+msgid "IDS_BEGIN_TIME"
+msgstr "开始时间"
+
+msgid "IDS_END_TIME"
+msgstr "结束时间"
+
+msgid "IDS_INTERVAL"
+msgstr "间隔"
+
+msgid "IDS_EXEC_TYPE"
+msgstr "执行类型"
+
+msgid "IDS_REST_OPTIONS_DLG"
+msgstr "设置取回参数"
+
+msgid "IDS_KEEP_SRC_TOP_DIR"
+msgstr "取回时保留数据源的顶级目录名"
+
+msgid "IDS_IF_EXIST_FILE"
+msgstr "如果文件存在时，采取"
+
+msgid "IDS_SKIP"
+msgstr "直接跳过已经存在的文件"
+
+msgid "IDS_OVERWRITE"
+msgstr "直接覆盖已经存在的文件"
+
+msgid "IDS_ASKME"
+msgstr "让我做决定如何处理已经存在的文件"
+
+msgid "IDS_OVERWIRTE_OLD"
+msgstr "直接覆盖较旧的文件"
+
+msgid "IDS_MONDAY"
+msgstr "星期一"
+
+msgid "IDS_TUESDAY"
+msgstr "星期二"
+
+msgid "IDS_WEDNESDAY"
+msgstr "星期三"
+
+msgid "IDS_THURSDAY"
+msgstr "星期四"
+
+msgid "IDS_FRIDAY"
+msgstr "星期五"
+
+msgid "IDS_SATURDAY"
+msgstr "星期六"
+
+msgid "IDS_SUNDAY"
+msgstr "星期日"
+
+msgid "IDS_ADD_SOME_TIME"
+msgstr "添加时间执行计划"
+
+msgid "IDS_FROM"
+msgstr "从"
+
+msgid "IDS_TO"
+msgstr "到"
+
+msgid "IDS_EVERY"
+msgstr "每"
+
+msgid "IDS_EVERY_DAY"
+msgstr "X天"
+
+msgid "IDS_RUN"
+msgstr "执行"
+
+msgid "IDS_EVERY_WEEK"
+msgstr "周"
+
+msgid "IDS_FULL"
+msgstr "完全"
+
+msgid "IDS_INCREMENTAL"
+msgstr "增量"
+
+msgid "IDS_HOUR"
+msgstr "时"
+
+msgid "IDS_RUN_AFTER_CONF"
+msgstr "设置完成后马上执行"
+
+msgid "IDS_MERGE"
+msgstr "执行指定次数后合并："
+
+msgid "IDS_FAST_LAUNCH_JOB"
+msgstr "快速创建"
+
+msgid "IDS_CLEAR_SEL"
+msgstr "清除选择"
+
+msgid "IDS_NOT_ABSOLUPATH"
+msgstr "不是绝对路径。"
+
+msgid "IDS_INVALID_PATH"
+msgstr "路径名无效，路径中不允许存在如下字符 %s。"
+
+msgid "IDS_ERROR_INFO"
+msgstr "错误"
+
+msgid "IDS_NO_JOB_NAME"
+msgstr "请输入作业名。"
+
+msgid "IDS_INVALID_JOB_NAME"
+msgstr "无效的作业名，作业名中不允许存在如下字符 %s。"
+
+msgid "IDS_PATH_IS_EMPTY"
+msgstr "路径为空。"
+
+msgid "IDS_DEST_PATH"
+msgstr "目标路径"
+
+msgid "IDS_STOP"
+msgstr "停止(&S)"
+
+msgid "IDS_PAUSE"
+msgstr "暂停(&P)"
+
+msgid "IDS_RESUME"
+msgstr "继续(&R)"
+
+msgid "IDS_OUT_FORMAT"
+msgstr "文档类型"
+
+msgid "IDS_NO_SELECTED_ITEM"
+msgstr "没有选择列表项。"
+
+msgid "IDS_PASSWD_MISMATCH"
+msgstr "密码不匹配!"
+
+msgid "IDS_DAYS_INTERVAL"
+msgstr "每 %d 天，在 %d 时"
+
+msgid "IDS_WEEK_INTERVAL"
+msgstr "每星期，在 %s，%d 时"
+
+msgid "IDS_LOAD_JOB_ITEM_ERROR"
+msgstr "在装载作业记录文件时发生了' %s '的错误，有可能某些项目未成功取得。"
+
+msgid "IDS_SAVE_JOB_ITEM_ERROR"
+msgstr "在保存作业记录文件时发生了' %s '的错误，项目将丢失。"
+
+msgid "IDS_TEMP_NAME"
+msgstr "临时恢复作业"
+
+msgid "IDS_SELECT_STORE_ENTRY"
+msgstr "请选择恢复数据！"
+
+msgid "IDS_NO_UIF_EXIST"
+msgstr "作业对应的 UIF 文件 %s 不存在。"
+
+msgid "IDS_SELECT_IT"
+msgstr "选择(&S)"
+
+msgid "IDS_DESELECT_IT"
+msgstr "取消(&C)"
+
+msgid "IDS_GET_DATA_BACK"
+msgstr "取回数据(&G)..."
+
+msgid "IDS_GET_FILE_PROPERTIES"
+msgstr "属性(&P)..."
+
+msgid "IDS_PATH_HAS_REDUNDANT_CHARS"
+msgstr "路径中存在多余字符。"
+
+msgid "IDS_INPUT_SN"
+msgstr "输入注册码"
+
+msgid "IDS_REGISTER_PROMPT"
+msgstr "这是还未注册的软件，请在此处输入您购买本软件时取得的注册码。如果还未取得，请联系您的销售商\n取得注册码。谢谢您的支持！"
+
+msgid "IDS_DEFAULT_JOB_TYPE"
+msgstr "默认的档案格式(&T)"
+
+msgid "IDS_DEFAULT_LANG"
+msgstr "默认的语言(&L)"
+
+msgid "IDS_SIMPLIFIED_CHINESE"
+msgstr "简体中文(&C)"
+
+msgid "IDS_TRADITIONAL_CHINESE"
+msgstr "繁体中文(&T)"
+
+msgid "IDS_ENGLISH"
+msgstr "英文(&E)"
+
+msgid "IDS_ABOUT_GMSOFT"
+msgstr "关于吉木软件"
+
+msgid "IDS_ENTERPRISE_EDITION"
+msgstr "吉木软件企业版"
+
+msgid "IDS_PRO_EDITION"
+msgstr "吉木软件专业版"
+
+msgid "IDS_FREE_EDITION"
+msgstr "吉木软件免费版"
+
+msgid "IDS_COPYRIGHT_DESC"
+msgstr "(C) 版权所有，2009-%d，访问 http://www.gimu.com 取得最新版本或者下载试用版本。"
+
+msgid "IDS_BUILD_DESC"
+msgstr "版本：%d.%d.%d (%s)"
+
+msgid "IDS_OS_DESC"
+msgstr "操作系统 %s，平台：%s"
+
+msgid "IDS_CPU_DESC"
+msgstr "CPU：%s\nCPU 数量：%d。"
+
+msgid "IDS_MEMORY_DESC"
+msgstr "总内存：%dMB，可用内存：%dMB"
+
+msgid "IDS_EIGEN_CODE"
+msgstr "请将下面的特征码发送给销售商或者通过注册页面取得注册码。"
+
+msgid "IDS_SN_INCORRECT"
+msgstr "注册码不正确，谢谢您的使用。"
+
+msgid "IDS_RESET_LANG_RELAUNCH_APP"
+msgstr "重设语言选项，再次启动本进程才会生效。你可以立即重启本进程，你是否确认要重启吗？"
+
+msgid "IDS_CONFIRM_PLEASE"
+msgstr "确认询问"
+
+msgid "IDS_JOBS_IS_RUNNING"
+msgstr "有作业还在执行。"
+
+msgid "IDS_NO_MUTIPLE_APP_ALLOWED"
+msgstr "本程序不支持多实例运行。如果只是有未杀死的相同进程在运行，请先将其杀死后再运行。"
+
+msgid "IDS_NO_7Z_SUPPORTED"
+msgstr "专业版不支持 %s 文件格式，请选用企业版本以支持 %s 格式。"
+
+msgid "IDS_NO_7Z_SYNC_SUPPORTED"
+msgstr "免费版不支持 %s 文件格式以及 %s，请选用专业版或者企业版。"
+
+msgid "IDS_DEFAULT_SNAPMODE_TRUE"
+msgstr "快照树方式(&S)"
+
+msgid "IDS_DEFAULT_SNAPMODE_FALSE"
+msgstr "单点树方式(&I)"
+
+msgid "IDS_DEFAULT_SNAPMODE"
+msgstr "默认数据取回方式(&G)"
+
+msgid "IDS_EXIT_GIMU"
+msgstr "退出\tCtrl+E"
+
+msgid "IDS_STOP_BY_ERROR"
+msgstr "作业 %s 因为错误：%s 而在 %s 停止。"
+
+msgid "IDS_STOP_NORMALLY"
+msgstr "作业 %s 于时间 %s 正常结束。"
+
+msgid "IDS_STOP_MANUALLY"
+msgstr "作业 %s 于时间 %s 因用户手工停止而结束。"
+
+msgid "IDS_POP_OPEN_DEST"
+msgstr "打开目的地目录(&X)..."
+
+msgid "IDS_SET_PASSWORD"
+msgstr "设置登录密码(&P)..."
+
+msgid "IDS_MINIMIZE_TO_TASKBAR"
+msgstr "最小化到托盘(&T)"
+
+msgid "IDS_START_WITH_WINDOWS"
+msgstr "随系统启动本程序(&S)"
+
+msgid "IDS_NODE_PROPERTIES"
+msgstr "结点属性"
+
+msgid "IDS_CREATE_TIME"
+msgstr "创建时间："
+
+msgid "IDS_ACCESS_TIME"
+msgstr "访问时间："
+
+msgid "IDS_MODIFY_TIME"
+msgstr "修改时间："
+
+msgid "IDS_STORE_TIME"
+msgstr "存储时间："
+
+msgid "IDS_CRC_VALUE"
+msgstr "CRC 值："
+
+msgid "IDS_DIRECTORY_INFO"
+msgstr "结点信息："
+
+msgid "IDS_DIRECTORY_INFOS"
+msgstr "目录：%d，文件：%d，总大小：%I64d，压缩大小：%I64d。"
+
+msgid "IDS_DIRECTORY_PATH"
+msgstr "路径："
+
+msgid "IDS_REPLACE"
+msgstr "替换(&R)"
+
+msgid "IDS_REPLACE_NO"
+msgstr "不替换(&N)"
+
+msgid "IDS_REPLACE_ALL"
+msgstr "替换所有(&A)"
+
+msgid "IDS_REPLACE_FILE_DLG"
+msgstr "目的地已经存在相同名字的文件 '%s'，你是否要替换同名文件？"
+
+msgid "IDS_REPLACE_FILE_DLG_TITLE"
+msgstr "替换文件"
+
+msgid "IDS_DEST_FILE"
+msgstr "目标文件"
+
+msgid "IDS_ORIGINAL_FILE"
+msgstr "源文件"
+
+msgid "IDS_SAME_FILE_EXISTS"
+msgstr "同名文件 %s 已经存在，修改时间为 %s，大小为 %I64d，你要覆盖么？"
+
+msgid "IDS_FILE_SIZE"
+msgstr "文件大小："
+
+msgid "IDS_JOB_STATISTICS"
+msgstr "执行任务 %s，将选择的数据 %s 到 %s，涉及目录 %d 个，文件 %d 个，总大小 %s 字节。"
+
+msgid "IDS_POP_SHOW_LOGS"
+msgstr "查看日志(&L)"
+
+msgid "IDS_POP_SHOW_REPORTS"
+msgstr "查看报表(&R)"
+
+msgid "IDS_TASK_MENU"
+msgstr "作业(&T)"
+
+msgid "IDS_RUN_JOB"
+msgstr "执行当前任务(&R)"
+
+msgid "IDS_JOB_SELECTED"
+msgstr "选定任务(&S)"
+
+msgid "IDS_ALL_JOBS"
+msgstr "所有任务(&A)"
+
+msgid "IDS_SHOW_LOGS"
+msgstr "显示日志(&S)"
+
+msgid "IDS_SHOW_REPORTS"
+msgstr "显示报表(&R)"
+
+msgid "IDS_POP_EXPORT_LOGS"
+msgstr "输出日志(&E)..."
+
+msgid "IDS_POP_EXPORT_REPORTS"
+msgstr "输出报表(&R)..."
+
+msgid "IDS_MENU_EXPORT_LOGS"
+msgstr "输出日志(&E)"
+
+msgid "IDS_MENU_EXPORT_REPORTS"
+msgstr "输出报表(&R)"
+
+msgid "IDS_EXPORT_JOB_SELECTED"
+msgstr "选定任务(&S)..."
+
+msgid "IDS_EXPORT_ALL_JOBS"
+msgstr "所有任务(&A)..."
+
+msgid "IDS_PAUSE_JOB"
+msgstr "暂停任务(&R)"
+
+msgid "IDS_RESUME_JOB"
+msgstr "恢复执行任务(&R)"
+
+msgid "IDS_JOB_REPORT_MESSAGE"
+msgstr "任务 %s 的第 %d 条日志记录："
+
+msgid "IDS_HAS_SAME_JOB"
+msgstr "已经存在相同名字的作业。"
+
+msgid "IDS_PROG_CONFIGURE"
+msgstr "程序参数设置"
+
+msgid "IDS_PROG_PASSWORD"
+msgstr "程序登录密码："
+
+msgid "IDS_PROG_DEFAULT_LANG"
+msgstr "程序默认语言："
+
+msgid "IDS_PROG_DEFAULT_JOB_TYPE"
+msgstr "作业默认类型："
+
+msgid "IDS_PROG_DEFAULT_SNAPMODE"
+msgstr "数据取回方式："
+
+msgid "IDS_LOG_REPORT_LIMIT"
+msgstr "日志报表最大条数："
+
+msgid "IDS_OK"
+msgstr "确定(&O)"
+
+msgid "IDS_CANCEL"
+msgstr "取消(&C)"
+
+msgid "IDS_PASSWORD_INCORRECT"
+msgstr "密码不正确。"
+
+msgid "IDS_PASSWORD_MUSTNT_EMPTY"
+msgstr "密码不能为空。"
+
+msgid "IDS_PASSWORD_LENGTH_IS_NOT_ENOUGH"
+msgstr "密码长度不够。"
+
+msgid "IDS_HAS_SAME_FILTER"
+msgstr "已经存在相同的过滤器了。"
+
+msgid "IDS_SHOW_MAINFRAME"
+msgstr "显示主窗口"
+
+msgid "IDS_TIME_SEQUENCE_ERROR"
+msgstr "时间序列不正确。"
+
+msgid "IDS_TASKICON_MESSAGE"
+msgstr "任务：%s，%s，已完成：%d %%。"
+
+msgid "IDS_GET_JOB_DATA_BACK"
+msgstr "取数据"
+
+msgid "IDS_SAVE_JOB_DATA_TO"
+msgstr "存数据"
+
+msgid "IDS_JOB_IS_RUNNING"
+msgstr "当前任务正在执行。"
+
+msgid "IDS_NO_NAMED_JOB"
+msgstr "没有指定名字为 '%s' 的任务。"
+
+msgid "IDS_DAEMON_SERVICE_DESC"
+msgstr "Gimu 的后台加载服务。"
+
+msgid "IDS_CANT_CREATE_SERVICE"
+msgstr "无法创建服务 %s，原因是：%s。"
+
+msgid "IDS_CANT_OPEN_SCM"
+msgstr "无法打开 Service Control Manager，原因是：%s。"
+
+msgid "IDS_CANT_OPEN_SERVICE"
+msgstr "无法打开服务 %s，原因是：%s。"
+
+msgid "IDS_CANT_DELETE_SERVICE"
+msgstr "无法删除服务 %s，原因是：%s。"
+
+msgid "IDS_BEGIN_JOB"
+msgstr "开始执行任务 %s。"
+
+msgid "IDS_JOB_WARN"
+msgstr "执行任务 %s 时，发生了告警：%s。"
+
+msgid "IDS_JOB_MESSAGE"
+msgstr "%s：%s"
+
+msgid "IDS_CLEAR_PAGE_CONTENT"
+msgstr "清除(&C)"
+
+msgid "IDS_RUN_AT_ONCE"
+msgstr "立即执行(&A)。"
+
+msgid "IDS_NOT_FOUND_ZIP_FILE"
+msgstr "无法在 Zip 文件中找不到文件 %s，无法恢复。"

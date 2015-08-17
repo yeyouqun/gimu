@@ -1,0 +1,10 @@
+// -*- MPC -*-
+// uuid.mpb,v 1.2 2004/02/25 17:30:30 elliott_c Exp
+
+feature(ace_uuid) {
+  Source_Files(ACE_COMPONENTS) {
+    UUID {
+      UUID.cpp
+    }
+  }
+}

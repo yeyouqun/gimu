@@ -1,0 +1,20 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=gimu.chm
+Contents file=gimu.hhc
+Default topic=index.html
+Display compile progress=Yes
+Full-text search=Yes
+Index file=gimu.hhk
+Language=0x804 中文(中国)
+Title=Gimu help file.
+
+
+[FILES]
+index.html
+gimu_features.html
+copyright.html
+
+[INFOTYPES]
+

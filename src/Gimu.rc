@@ -1,0 +1,21 @@
+// Microsoft Visual C++ generated resource script.
+//
+aaaaaaaa ICON "apps\\bak\\res\\gimu.ico"
+
+// this icon is used with wxFrame::SetIcon()
+gimu ICON "apps\\bak\\res\\gimu.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "apps\\bak\\res\\gimu.ico"
+IDI_REPORT               ICON                    "apps\\bak\\res\\report.ico"
+IDI_LOG               ICON                    "apps\\bak\\res\\log.ico"
+/////////////////////////////////////////////////////////////////////////////
+
+

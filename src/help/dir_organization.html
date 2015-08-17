@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+</head>
+<body>
+	<p>
+	不同的文件格式的目录及命名方式。不同的存储格式有一个共同的特点是，在存储目的地上，都是以作业目的地目录再加上以作业名字为目录名来作为作业的完整目的地目录。
+	<table>
+		<tr><td valign="top"><b>复制</b> </td><td>在目的地目录，每次作业有数据需要存储都将生成一个以标准时间为名字的目录，所有当次存储的数据都存储在此目录下。而目录结构则与源数据文件的相对目录结构层次完全相同。如目的地为 F:，作业名为：copy，产生的目标结构如下示：<br>
+		<img src="image/copy_dest.jpg"></td></tr>
+		<tr><td valign="cn"><b>同步</b></td><td>都是直接存储在以作业目的地目录再加上以作业名字命名的子目录，而目录结构则与源数据文件的相对目录结构层次完全相同。如目的地为 F:，作业名为：data，产生的目标结构如下示：<br>
+		<img src="image/sync_dest.jpg"></td></tr>
+		<tr><td valign="top"><b>ZIP/ZIP64</b> </td><td>都是直接存储在以作业目的地目录再加上以作业名字命名的子目录，ZIP 文件的名字都是产生 ZIP 文件时的时间字符串。如目的地为 F:，作业名为：asmzip，产生的目标结构及文件如下示：<br>
+		<img src="image/zip_dest.jpg"></td></tr>
+	</table>
+	</p>
+</body>
+</html>

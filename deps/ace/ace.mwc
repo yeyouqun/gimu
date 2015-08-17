@@ -1,0 +1,10 @@
+//  -*- MPC -*-
+// ace.mwc,v 1.6 2004/11/05 04:29:02 mesnier_p Exp
+
+workspace {
+  ace.mpc
+  QoS
+  RMCast
+  SSL
+  TMCast
+}

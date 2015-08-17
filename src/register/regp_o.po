@@ -1,0 +1,27 @@
+﻿#
+# Resource script for Chinese Language.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gimu-Register. \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-11-20 18:40+0100\n"
+"Last-Translator: yeyouqun <yeyouqun@163.com>\n"
+"Language-Team: Gimu-Register. - http:\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: \n"
+"Previous-Translator: \n"
+
+msgid "IDS_REGISTER_APP"
+msgstr "吉木软件注册码生成器"
+
+msgid "IDS_REGISTER"
+msgstr "生成注册码"
+
+msgid "IDS_MACH_FINGER_PRINT"
+msgstr "机器特征码："
+
+msgid "IDS_SOFTWARE_SN"
+msgstr "吉木软件注册码："

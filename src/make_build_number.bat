@@ -1,0 +1,1 @@
+echo #define BUILDDATE "%date%%time%" > buildnum.h

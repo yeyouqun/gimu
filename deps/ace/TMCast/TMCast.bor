@@ -1,0 +1,72 @@
+# Makefile for building the TMCast library with Borland C++ Make
+
+NAME = TMCast
+
+NO_FULL_PATH=1
+
+OBJFILES = \
+	$(OBJDIR)\Group.$(OBJ_EXT) \
+	$(OBJDIR)\MTQueue.$(OBJ_EXT) \
+	$(OBJDIR)\Protocol.$(OBJ_EXT)
+
+LFLAGS = \
+	-L"..\..\lib\$(CONFIG_SUBDIR)" \
+	-j"..\..\lib\$(CONFIG_SUBDIR)" 
+
+LIBFILES = \
+	ACE$(LIB_DECORATOR).lib \
+	$(DUMMY_VALUE_NOT_ENDING_IN_BACKSLASH)
+
+!ifdef STATIC
+LIB_FLAGS = \
+        -DACE_AS_STATIC_LIBS
+!else
+DLL_FLAGS = \
+        -DTMCAST_BUILD_DLL
+!endif
+
+CFLAGS = \
+	-I"..\.." \
+	$(LIB_FLAGS) \
+	$(DLL_FLAGS)
+
+CPPDIR = .
+CDIR   = .
+
+INCDIR_NAME = ace\TMCast
+
+#
+# Override defaults in outputdir.bor
+#
+INSTALL_THIS_TARGET = 1
+
+STATIC_DIR=.
+DEBUG_DIR=.
+PASCAL_DIR=.
+UNICODE_DIR=.
+
+INSTALL_DLLDIR=$(INSTALL_DIR)\lib
+INCLUDES_INSTALL=1
+BINDIR = ..\..\lib
+
+!include <$(ACE_ROOT)\include\makeinclude\build_library.bor>
+
+includes_install: $(INCLUDES)
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y Export.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\Export.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y FaultDetector.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\FaultDetector.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y Group.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\Group.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y GroupFwd.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\GroupFwd.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y LinkListener.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\LinkListener.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y MTQueue.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\MTQueue.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y Messaging.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\Messaging.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y Protocol.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\Protocol.hpp 1> NUL
+	-@if not exist $(INSTALL_DIR)\include\$(INCDIR_NAME)\. mkdir $(INSTALL_DIR)\include\$(INCDIR_NAME)\.
+	-&copy /Y TransactionController.hpp $(INSTALL_DIR)\include\$(INCDIR_NAME)\TransactionController.hpp 1> NUL

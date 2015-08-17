@@ -1,0 +1,10 @@
+// -*- MPC -*-
+// codecs.mpb,v 1.2 2004/02/25 17:40:07 elliott_c Exp
+
+feature(ace_codecs) {
+  Source_Files(ACE_COMPONENTS) {
+    Codecs {
+      Codecs.cpp
+    }
+  }
+}
